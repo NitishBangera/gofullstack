@@ -22,7 +22,7 @@ const (
 	MoodStateOnCloudNine
 )
 
-// AuditableContent types are meant to be embeded into types we want to keep a
+// AuditableContent types are meant to be embedded into types we want to keep a
 // check on for auditing purposes
 type AuditableContent struct {
 	TimeCreated  time.Time
@@ -50,7 +50,7 @@ var Moods map[string]MoodState
 
 // The init() function is responsible for initializing the mood state
 func init() {
-	Moods = map[string]MoodState{"netural": MoodStateNeutral, "happy": MoodStateHappy, "sad": MoodStateSad, "angry": MoodStateAngry, "hopeful": MoodStateHopeful, "thrilled": MoodStateThrilled, "bored": MoodStateBored, "shy": MoodStateShy, "comical": MoodStateComical, "cloudnine": MoodStateOnCloudNine}
+	Moods = map[string]MoodState{"neutral": MoodStateNeutral, "happy": MoodStateHappy, "sad": MoodStateSad, "angry": MoodStateAngry, "hopeful": MoodStateHopeful, "thrilled": MoodStateThrilled, "bored": MoodStateBored, "shy": MoodStateShy, "comical": MoodStateComical, "cloudnine": MoodStateOnCloudNine}
 }
 
 // NewPost is responsible for creating an instance of the Post type.
